@@ -2,7 +2,10 @@ package com.example.cc000033.learnffmpeg;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
+
+import java.util.logging.Logger;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         videoUtils = new VideoUtils();
         videoUtils.playMyMedia("http://blog.csdn.net/ywl5320");
         tv.setText(videoUtils.stringFromJNI());
+
+        Log.e("shiquan", "onCreate: -----" );
     }
 
 
