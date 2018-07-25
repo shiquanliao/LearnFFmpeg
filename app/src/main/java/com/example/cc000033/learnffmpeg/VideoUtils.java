@@ -17,4 +17,6 @@ public class VideoUtils {
     public native String stringFromJNI();
 
     public native void playMyMedia(String url);
+
+    public native static void decode(String input,String output);
 }
